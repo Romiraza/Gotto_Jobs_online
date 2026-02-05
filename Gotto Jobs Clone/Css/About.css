@@ -1,0 +1,974 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* HEADER........
+.............SECTION */
+
+.nav{
+    background: white;
+    width: 100%;
+    height: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-bar-content{
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo-section{
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+}
+
+.logo{
+    width: 65px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text strong{
+    margin-block: auto;
+    color: #5d52ba;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.logo-text small{
+    color: #f65129;
+    font-size: 12px;
+    font-weight: 700;
+    /* float: left;*/
+
+}
+
+.menu-section{
+    width: 75%;
+    display: flex;
+}
+
+.nav-ul{
+    padding: 0;
+    display: flex;
+    flex:auto;
+    justify-content: space-between;
+}
+
+.nav-li{
+    padding: 0px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.nav-links{
+    color: #717275;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: medium;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.nav-links:hover{
+    color: #f65129;
+}
+
+.active{
+    color: #f65129;
+}
+
+.pages{
+    padding-right: 5px;
+}
+
+.drop-down-icon{
+    color: #717275;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.drop-down-icon:hover{
+    color: #f65129;
+}
+
+.drop-down{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    min-width: 9rem;
+    background: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    border: 0;
+    padding: 0;
+    margin-top: 20px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+.drop-down-li{
+    padding: 15px;
+    border-bottom: 1px solid #e9eaeb;
+    border-radius: 4px;
+}
+
+.drop-down-items{
+    color: #717275;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both;
+    width: 100%;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    transition: 0.5s;
+}
+
+.drop-down-items:hover{
+    color: #f65129;
+}
+
+.page-drop-down:hover .drop-down{
+    display:block;
+}
+
+.register-link{
+    margin-left: 200px;
+    padding: 0px;
+}
+
+.login-button{
+    background-color: #f65129;
+    color: white;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    margin-left: 17px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 0.4s;
+}
+
+.login-button:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* HEADER........
+..............END*/
+
+/* SECTION-1........
+.............START */
+
+.main-image-section{
+    background: url('images/site-header/close-up-young-business-team-working.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.about-section-1-overlay{
+    background-color: #5d52ba;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-1{
+    margin: 0 auto;
+}
+
+.about-section-1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-gotto{
+    color: white;
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: normal;
+    position: absolute;
+    top: -100px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.home-about-div{
+    background-color: white;
+    position: absolute;
+    top: -35px;
+    border-radius: 100px;
+}
+
+.home-about{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 7px 16px 3px 16px;
+}
+
+.home{
+    list-style: none;
+    color: #5d52ba;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home:hover{
+    color: #f65129;
+}
+
+.about{
+    color: #6c757d;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* SECTION-2..............
+................START */
+
+
+.introducing-job-section{
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.introducing-job-section-parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-2{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.introducing-job-section-left-part{
+    width: 47%;
+}
+
+.upper-part-heading-para-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-text{
+    margin: 0;
+    letter-spacing: -1.5px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.sub-heading-text{
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.paragraph-text{
+    margin: 0;
+    color: #717275;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.lower-part-btn-section{
+    display: flex;
+    align-items: baseline;
+}
+
+.explore-services{
+    background: transparent;
+    border: 2px solid #e9eaeb;
+    color: #f65129;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.explore-services:hover{
+    background-color: #f65129;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.contact{
+    margin: 0;
+    color: #717275;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #f65129;
+    transition: width 0.5s;
+}
+
+.contact:hover::after{
+    width: 100%;
+}
+
+.contact:hover{
+    color: #5d52ba !important;
+}
+
+.introducing-job-section-right-part{
+    width: 47%;
+    border-radius: 30px;
+}
+
+.image-overlay{
+    background: url('images/horizontal-shot-happy-mixed-race-females.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.experiance-text{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #5d52ba;
+    border-top: 30px solid #0dcaf0;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.twenty-text{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.years-of-experiance{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* SECTION-2.....
+............END */
+
+/* SECTION-3......
+..................START */
+
+.company-best-services{
+    padding-bottom: 100px;
+}
+
+.container-3{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.parent-wrap-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading-services-details{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.best-services-details{
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    border-top: 25px solid transparent;
+    text-align: center;
+    position: relative;
+    margin-top: 48px;
+    margin-left: 20px;
+    padding: 40px 30px;
+    transition: 0.5s;
+}
+
+.best-services-details:hover{
+    background-color: #f0f8ff;
+    border-top: 25px solid #0dcaf0;
+}
+
+.best-services-details-marketing{
+    background-color: #f0f8ff;
+    border-top: 25px solid #0dcaf0;
+}
+
+.best-services-details-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.web-design{
+    width: 60px;
+    height: 50px;
+}
+
+.best-services-details-name{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.best-services-details-paragraph{
+    margin: 0;
+    color: #717275;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* SECTION-3.........
+...............END */
+
+/* SECTION-4......
+...............START */
+
+.main-content-section-7{
+    padding: 100px 0; 
+    background: #f0f8ff;
+}
+
+.container-7{
+    margin: 0 70px;
+}
+
+.container-7-parent-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.happy-customers{
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    text-align: center !important;
+}
+
+.container-7-customers-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.container-7-left-section{
+    width: 48%;
+    background: white;
+    border-radius: 30px;
+}
+
+.container-7-left-section-upper-part{
+    display: flex;
+    padding: 40px 40px 20px 40px;
+}
+
+.customer-review-image-section{
+    display: flex;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 5px solid #f0f8ff;
+}
+
+.customer-image{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customer-name-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-name-1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.customer-name-2{
+    color: #717275;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.stars-image{
+    display: flex;
+    flex: auto;
+    align-items: center;    
+}
+
+.customer-reviews-star{
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.reviews-in-words{
+    position: relative;
+}
+
+.left-quote{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 70px;
+    opacity: 0.1;
+}
+
+.customer-writing{
+    font-weight: 600;
+    font-size: 32px;
+    padding: 30px 40px 40px 73px;
+    margin: 0;
+    color: #717275;
+    line-height: 40px;
+}
+
+.container-7-right-section{
+    width: 48%;
+    background: white;
+    border-radius: 30px;
+}
+
+.radio-btn{
+    margin: auto;
+}
+
+.radio-button-style{
+    border-radius: 50%;
+    padding: 10px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    background: white;
+    border: 5px solid transparent;
+    transition: 0.3s;
+}
+
+.radio-button-style:active{
+    border: 5px solid #f65129;
+}
+
+.radio-button-style:hover{
+    border: 5px solid #f65129;
+}
+
+/* SECTION-4........
+..................END */
+
+/* SECTION-5........
+..................START */
+
+.main-content-section-8{
+    background: url('images/millennial-group-young-businesspeople.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 75px;
+} 
+
+.bg-orange{
+    opacity: 0.8;
+    background: #f65129;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-8{
+    margin: 0 70px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-8-left-section{
+    width: 50%;
+}
+
+.over-10k-opening-jobs{
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.over-10k-opening-jobs-paragraph{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.parent-section-right-section{
+    display: flex;
+    flex: auto;
+    width: 50%;
+    height: fit-content;
+    align-items: center;
+}
+
+.create-an-account{
+    font-weight: 400;
+    padding: 15px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-left: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.create-an-account:hover{
+    background-color: white;
+    color: #f65129;
+}
+
+.post-a-job{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-left: 24px;
+    margin-top: 24px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.post-a-job::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    transition: width 0.5s;
+}
+
+.post-a-job:hover::after{
+   width: 100%;
+}
+
+/* ........FOOTER.......
+...START............... */
+
+.footer{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.container-9{
+    margin: 0 70px;
+    display: flex;
+}
+
+.footer-section{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer-section-width{
+    width: 33% !important;
+}
+
+.footer-section-paragraph{
+    color: #717275;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: fit-content;
+}
+
+.footer-section-paragraph:hover{
+    color: #f65129;
+}
+
+.footer-section-heading{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.footer-email-section{
+    margin-top: 15px;
+    padding: 30px;
+    padding-bottom: 10px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    position: relative;
+}
+
+.footer-email-section-input{
+    margin: 20px 0;
+    padding: 20px 70px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+}
+
+.input-male-icon{
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    bottom: 52px;
+    left: 60px;
+}
+
+.send-button{
+    width: 45px;
+    position: absolute;
+    right: 32px;
+    bottom: 38px;
+}
+
+.footer-nav{
+    background: #5d52ba;
+    padding: 20px 0;
+    margin-top: 100px;
+    position: relative;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-nav p{
+    margin: 0;
+}
+
+.container-10{
+    margin: 0 70px;
+}
+
+.footer-nav-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+
+.footer-nav-left-section{
+    display: flex;
+    align-items: center;
+    width: 30%;
+
+}
+
+.Copyright{
+    margin-right: 25px;
+}
+
+.privacy-terms{
+    display: flex;
+    width: 115px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.footer-nav-mid-section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 40%;
+    margin-left: 25px;
+}
+
+.footer-icon{
+    background: #7f73eb;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-media-icon{
+    color: white;
+    font-size: 18px !important;
+}
+
+.footer-icon:hover{
+    background: #0dcaf0;
+    color: white;
+    transform: scale(1.15);
+}
+
+.footer-nav-right-section{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.Tooplate{
+    margin-left: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Tooplate:hover{
+    color: red;
+}
+
+.upper-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 60px;
+    background: #0dcaf0;
+    position: absolute;
+    top: -20px;
+    right: -70px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.upper-arrow:hover{
+    background-color: #f65129;
+}
+
+.arrow{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
